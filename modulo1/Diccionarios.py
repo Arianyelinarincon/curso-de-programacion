@@ -8,7 +8,7 @@ mi_diccionario["edad"]=31
 print("despues de añadir edad",mi_diccionario)
 
 mi_diccionario["profesion"]="ingeniero"
-print("profesion:", mi_diccionario["profesion"])
+print("profesion:", mi_diccionario["profesion"])ghhhhf
 
 print("logitud del diccionario", len(mi_diccionario))
 
