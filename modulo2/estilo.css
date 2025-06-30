@@ -7,8 +7,9 @@
 .titulodatos{
     color: rgb(9, 2, 44);
     font-family: fantasy;
-    font-size: 70px;
+    font-size: 60px;
     text-align: center;
+    
 
 }
 .des{
@@ -21,7 +22,7 @@
 {
     font-size: 50px;
 font-family: fantasy;
-text-align: center;
+
 }
 
 .boton
@@ -32,4 +33,5 @@ padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  float: none;
 }
