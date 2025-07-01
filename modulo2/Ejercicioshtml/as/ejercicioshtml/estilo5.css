@@ -1,0 +1,21 @@
+
+p {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+  }
+  
+
+  .destacado {
+    background-color: darkgoldenrod;
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+  }
+  
+  
+  #resumen {
+    font-style: italic;
+    color: brown;
+  }
+  
