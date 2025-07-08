@@ -84,7 +84,7 @@ function procesarFunciones(expr) {
 
 
 // esto es aparte, solo son las particulas 
-// ==== PARTICULAS ESTILO TERRARIA ====
+
 const canvas = document.getElementById('particles-canvas');
 const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
