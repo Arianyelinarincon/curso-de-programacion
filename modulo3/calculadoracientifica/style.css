@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+  font-family: 'Press Start 2P', cursive;
+  box-sizing: border-box;
+}
+
+:root {
+  --fondo-cielo: #87CEEB;
+  --pantalla: #e8ddb5;
+  --panel-madera: #9c7248;
+  --borde-madera: #5a3e2b;
+  --sombra-boton: #332014;
+  --texto: #ffffff;
+  --igual: #dd8037;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('https://64.media.tumblr.com/79564753acd456760742d88b1cc040b4/795bab8c5363fda8-04/s1280x1920/7705a598770705cd0115a9c9e54609453321fa1e.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.3); /* oscurece */
+  z-index: -1;
+}
+
+
+.calculadora {
+  background-color: var(--panel-madera);
+  padding: 20px;
+  border: 6px solid var(--borde-madera);
+  border-radius: 12px;
+  box-shadow: 0 0 10px #00000088;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  backdrop-filter: blur(2px);
+}
+
+.display {
+  background-color: var(--pantalla);
+  padding: 16px;
+  color: #222;
+  font-size: 14px;
+  text-align: right;
+  min-height: 60px;
+  border: 4px inset var(--borde-madera);
+  box-shadow: inset -3px -3px 0 #ffffff55, inset 3px 3px 0 #00000055;
+  overflow-x: auto;
+}
+
+.botones {
+  display: grid;
+  grid-template-columns: repeat(4, 64px);
+  gap: 10px;
+  justify-content: center;
+}
+
+.pixel-button {
+  background-color: var(--borde-madera);
+  color: var(--texto);
+  border: 3px solid #3c281a;
+  padding: 16px;
+  font-size: 11px;
+  text-shadow: 1px 1px 0 #000;
+  box-shadow: 0 5px 0 var(--sombra-boton);
+  transition: transform 0.1s ease;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pixel-button:active {
+  transform: translateY(4px);
+  box-shadow: 0 1px 0 var(--sombra-boton);
+}
+
+.pixel-button.equal {
+  background-color: var(--igual);
+  box-shadow: 0 5px 0 #7a3c12;
+  color: #fff;
+  grid-column: span 2;
+}
+
+
+.pixel-button:hover {
+  filter: brightness(1.1);
+}
+
+
+
+
+
