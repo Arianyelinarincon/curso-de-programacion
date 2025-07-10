@@ -771,3 +771,69 @@ position: relative;
         padding: 0.5em 1em; /* Reducir padding del botón */
     }
 }
+
+
+/* Proyectos - Responsive Images */
+.proyectoimg {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.3s ease;
+}
+
+.proyectoitem:hover .proyectoimg {
+  transform: scale(1.02);
+}
+
+@media (max-width: 992px) {
+  .proyectoitem {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .proyectoimg {
+    max-height: 250px;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+  
+  .proyectodata {
+    padding: 1.5rem;
+    border-radius: 0 0 0.5rem 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .proyectocategoria {
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+  }
+  
+  .categoriabtn {
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  .proyectoimg {
+    max-height: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .proyectoimg {
+    max-height: 180px;
+  }
+  
+  .tags li {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.4rem;
+    margin-right: 0.3rem;
+  }
+  
+  .proyectolink {
+    margin-top: 1.5em;
+    font-size: 0.8rem;
+  }
+}
