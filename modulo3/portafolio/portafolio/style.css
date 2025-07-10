@@ -672,19 +672,102 @@ position: relative;
     margin-top: 3.75rem;
 }
 
+/* Media Queries para Responsividad */
+
+/* Para pantallas grandes */
 @media screen and (max-width: 1200px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .navlist {
+        column-gap: 2rem;
+    }
+
+    .home__container {
+        grid-template-columns: 1fr; /* Cambiar a una sola columna */
+    }
+
+    .servicioscontenedor {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    }
+
+    .resumecontainer {
+        grid-template-columns: 1fr; /* Una sola columna */
+    }
 }
 
+/* Para pantallas medianas */
 @media screen and (max-width: 992px) {
+    .navlist {
+        flex-direction: column; /* Cambiar a columna */
+        padding-left: 0;
+    }
+
+    .home__img {
+        height: 300px; /* Ajustar la altura de la imagen */
+    }
+
+    .proyectoscontainer {
+        grid-template-columns: 1fr; /* Una sola columna */
+    }
+
+    .contactocontainer {
+        grid-template-columns: 1fr; /* Una sola columna */
+    }
 }
 
-/* For medium devices */
+/* Para pantallas pequeñas */
 @media screen and (max-width: 768px) {
+    .section {
+        padding: 2rem 0; /* Reducir el padding */
+    }
+
+    .homename {
+        font-size: var(--fs-lg); /* Ajustar tamaño de fuente */
+    }
+
+    .button {
+        padding: 0.8em 1.5em; /* Reducir padding del botón */
+    }
+
+    .textlg {
+        font-size: var(--fs-sm); /* Ajustar tamaño de texto */
+    }
 }
 
+/* Para pantallas muy pequeñas */
 @media screen and (max-width: 576px) {
+    .homename {
+        font-size: var(--fs-lg); /* Ajustar tamaño de fuente */
+        text-align: center; /* Centrar texto */
+    }
+
+    .home__img {
+        width: 100%; /* Asegurarse de que la imagen ocupe el 100% */
+        height: auto; /* Mantener la proporción */
+    }
+
+    .contactoinput {
+        padding: 0.5rem; /* Reducir padding */
+    }
+
+    .contactomensaje {
+        font-size: var(--fs-sm); /* Ajustar tamaño de texto */
+    }
 }
 
-/* For small devices */
+/* Para pantallas muy pequeñas */
 @media screen and (max-width: 350px) {
+    .sectiontitulo {
+        font-size: var(--fs-sm); /* Ajustar tamaño de título */
+    }
+
+    .text-xs {
+        font-size: var(--fs-xs); /* Ajustar tamaño de texto */
+    }
+
+    .button {
+        padding: 0.5em 1em; /* Reducir padding del botón */
+    }
 }
